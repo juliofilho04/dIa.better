@@ -156,7 +156,7 @@ footer {
 @media (max-width: 600px) {
     #width{
         margin: 0px;
-        max-width: 500px;
+        max-width: 430px;
         text-align: center;
     }
     #body {
