@@ -14,6 +14,11 @@
     grid-template-columns: 1fr 1fr;
     margin-top: 20px;
 }
+#body2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-top: 20px;
+}
 #body img {
     justify-self: end;
 }
@@ -23,6 +28,9 @@
 }
 #text p{
     margin-bottom: 10px;
+}
+#tabela {
+    margin-left: 50px;
 }
 #titulo_grid_tabela {
     text-align: center;
@@ -61,6 +69,11 @@
     display: grid;
     grid-template-columns: auto auto;
     margin-top: 15px;
+}
+#grid_input_imc {
+    display: grid;
+    margin-top: 15px;
+    grid-template-columns: auto auto auto;
 }
 #grid_input button {
     width: 50%;
@@ -109,6 +122,14 @@
     color: white;
     border-radius: 5px;
 }
+#resultado_imc {
+    margin-top: 15px;
+    width: 85%;
+    padding: 10px 0px 10px 10px;
+    background-color: #1C8FE7;
+    color: white;
+    border-radius: 5px;
+}
 #imc {
     justify-self: end;
     text-align: center;
@@ -131,4 +152,65 @@ footer {
     background-color: #D9D9D9;
     padding: 20px;
     text-align: center;
+}
+@media (max-width: 600px) {
+    #width{
+        margin: 0px;
+        max-width: 500px;
+        text-align: center;
+    }
+    #body {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 20px;
+    }
+    #inputs h1{
+        margin-top: 20px;
+    }
+    #body img {
+        display: none;
+    }
+    #imc {
+        margin-top: 20px;
+        justify-self: center;
+    }
+    #body2 {
+        grid-template-columns: 1fr;
+    }
+    #flex{
+        display: grid;
+    }
+    #grid_input{
+        justify-content: center;
+    }
+    #grafico {
+        max-width: 100%;
+    }
+    #tabela {
+        margin-left: 0px;
+    }
+    #grid_input_imc{
+        grid-template-columns: 1fr 1fr;
+    }
+    #resultado_imc {
+        text-align: start;
+        margin-top: 19px;
+        margin-left: 5px;
+        width: 200px;
+        height: 26px;
+        padding: 10px 0px 0px 10px;
+        background-color: #1C8FE7;
+        color: white;
+        border-radius: 5px;
+    }
+    #botao_azul {
+        margin-top: 10px;
+        margin-bottom: 5px;
+        width: 100%;
+        padding: 10px;
+        background-color: #1C8FE7;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+    }
 }
