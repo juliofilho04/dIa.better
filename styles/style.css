@@ -154,17 +154,25 @@ footer {
     text-align: center;
 }
 @media (max-width: 600px) {
-    #width{
-        margin: 0px;
+    #width {
         max-width: 430px;
         text-align: center;
     }
+    #titulo {
+        margin: 0;
+        width: 100vw;
+        color: #1C8FE7;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
     #body {
         display: grid;
+        width: 100vw;
         grid-template-columns: 1fr;
         margin-top: 20px;
     }
     #inputs h1{
+        width: 450px;
         margin-top: 20px;
     }
     #body img {
@@ -175,6 +183,7 @@ footer {
         justify-self: center;
     }
     #body2 {
+        width: 100vw;
         grid-template-columns: 1fr;
     }
     #flex{
